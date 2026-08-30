@@ -203,5 +203,12 @@ git log --oneline --decorate --all
 # ca68db1 Initialize DVC for Question 3
 # 859f351 Initialise the repo
 ```
+The 2 screenshots provided are the proofs for these parts of Question2 
+
+``` bash
+ 2. Simulate a data update: add new rows from new_labels.zip to create v2 (now, the row count
+should 2801), re-run dvc add, and commit v2 with a clear commit message. 
+3. Demonstrate rolling back to v1 using git checkout + dvc checkout, and include terminal output
+(screenshot or copy-pasted) proving the row count matches v1 exactly. ```
 
 
