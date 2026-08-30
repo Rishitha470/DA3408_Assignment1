@@ -15,24 +15,6 @@ git add .
 git commit -m "Initialize the repo"
 ```
 
-Git complained it didn't know who I was, so:
-
-```bash
-git config --global user.email "rishivinu4u@gmail.com"
-git config --global user.name "Rishitha470"
-git commit -m "Initialise the repo"
-```
-
-Connected it to GitHub:
-
-```bash
-git remote add origin https://github.com/Rishitha470/DA3408_Assignment1.git
-git branch -M main
-git push -u origin main
-```
-
-GitHub kept rejecting the push with "Invalid username or token — password authentication is not supported." Took a few tries before I remembered GitHub doesn't accept your account password anymore, you need a personal access token pasted in as the password. Once I generated one from GitHub settings and used that, the push went through.
-
 ## Getting DVC set up
 
 Activated my venv and installed DVC:
@@ -185,7 +167,7 @@ git push origin v2
 git checkout v1
 ```
 
-This drops you into detached HEAD, which is expected — you're not supposed to be on a branch when you're just checking out a tag to look at an old state.
+This drops you into detached HEAD, which is expected - you're not supposed to be on a branch when you're just checking out a tag to look at an old state.
 
 ```bash
 dvc checkout
@@ -222,5 +204,4 @@ git log --oneline --decorate --all
 # 859f351 Initialise the repo
 ```
 
-## Note on the remote credentials
-The Backblaze application key used for `backblaze` was rotated after this session since it briefly ended up in a pasted terminal log — current key lives only in `.dvc/config.local`, never committed.
+
