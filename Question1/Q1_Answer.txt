@@ -1,0 +1,10 @@
+Question 1 
+1:
+a) Entanglement (CACE):Changing the rounding logic of the estimated delivery time feature unexpectedly affected recommendations related to favorite restaurants. This demonstrates that ML features can be coupled through the learned model, so a change to one apparently independent component can change the overall behaviour of the system.
+
+b) Undeclared Consumers:The marketing dashboard team is consuming the model's raw output without the knowledge of the ML team. This creates an invisible dependency because changes to the model output or table structure could silently break another system. Undeclared consumers make safe modification and maintenance of ML systems difficult.
+
+c)Configuration & Glue-Code Debt:The training pipeline has evolved into a collection of 14 undocumented shell scripts with no clear orchestration or central source of configuration. This creates a tangled pipeline that is difficult to understand, reproduce, modify, and maintain.
+
+2:
+Mitigation for (c): To reduce configuration and glue-code debt, the pipeline should be reorganized into a structured and reproducible workflow. MLflow can be used to centrally track experiment parameters, metrics, artifacts, and run information instead of leaving important information scattered across undocumented shell scripts. DVC can be used to version the datasets used by the pipeline, allowing the exact data version to be reproduced. The scripts should also be documented and organized with a clear pipeline structure. This would make the ML workflow easier to understand, maintain, and reproduce.
