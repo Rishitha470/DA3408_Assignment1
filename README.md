@@ -4,5 +4,7 @@
 
 `Q4` folder contains the `README` which contains the link for the collabrated repo, u can directly access the whole thing required for this que in the repo link attached.
 
-`Report` contains the report for the whole Assignment.
+`AIOps_Report1` contains the report for the whole Assignment.
+
+`AI_DISCLOSURE.md` contains the AI fair use requirement.
 
