@@ -1,4 +1,4 @@
-# Question 3 — DVC Data Versioning & Rollback
+# Question 3 - DVC Data Versioning & Rollback
 
 ## Setup
 
@@ -37,7 +37,7 @@ git commit -m "Initialize DVC for Question 3"
 git push
 ```
 
-## v1 — 1800 files, 1801-line CSV
+## v1-1800 files, 1801-line CSV
 
 Moved into the Question3 folder and pulled the class dataset:
 
@@ -113,7 +113,7 @@ git push origin main
 git push origin v1
 ```
 
-## v2 — adding new_labels, 2801-line CSV
+## v2-adding new_labels, 2801-line CSV
 
 ```bash
 cd Question3
@@ -161,13 +161,13 @@ git push origin main
 git push origin v2
 ```
 
-## Rollback — proving v1 is recoverable
+## Rollback-proving v1 is recoverable
 
 ```bash
 git checkout v1
 ```
 
-This drops you into detached HEAD, which is expected - you're not supposed to be on a branch when you're just checking out a tag to look at an old state.
+This drops you into detached HEAD, which is expected, you're not supposed to be on a branch when you're just checking out a tag to look at an old state.
 
 ```bash
 dvc checkout
@@ -177,7 +177,7 @@ wc -l Question3/filenames.csv
 # 1801
 ```
 
-1801 — matches v1 exactly. Rollback confirmed. Went back to the tip afterward:
+1801-matches v1 exactly. Rollback confirmed. Went back to the tip afterward:
 
 ```bash
 git checkout main
